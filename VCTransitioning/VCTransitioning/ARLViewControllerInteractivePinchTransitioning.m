@@ -94,7 +94,7 @@
 
 - (void)animateTransition:(id<UIViewControllerContextTransitioning>)context
 {
-    [self finishTransition];
+    [self startInteractiveTransition:context];
 }
 
 //----------------------------------------------------------------------------------------------------------------------
