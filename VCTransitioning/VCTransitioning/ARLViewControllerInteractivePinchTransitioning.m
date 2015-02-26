@@ -75,9 +75,9 @@
                       willAppearAfterDismissingPresentedViewController:self.fromViewController];
     }
     
-    // If we have plain call of `-presentViewController:animated:comletion:` or
-    // `-dismissViewController:animated:comletion:` then `-startInteractiveTransition` will be called
-    // and animation should be finished, beouse there is no interations
+    // If we have plain call of `-presentViewController:animated:completion:` or
+    // `-dismissViewController:animated:completion:` then `-startInteractiveTransition` will be called
+    // and animation should be finished, because there is no iterations
     if (!self.isTransitionInAction) {
         self.transitionIsInAction = YES;
         [self finishTransition];
